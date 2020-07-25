@@ -11,8 +11,12 @@
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+   
+
     <!-- NanoGallery -->
-    <link href="css/nanogallery.min.css" rel="stylesheet" type="text/css">
+    <link href="css/nanogallery.css" rel="stylesheet">
+    <link href="https://unpkg.com/nanogallery2@2.3.0/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://unpkg.com/nanogallery2@2.3.0/dist/jquery.nanogallery2.min.js"></script>
 
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
@@ -220,18 +224,33 @@
       
     </section>
 
-    <section class="d-lg-block">
-        <div class="text-center m-5">
+    <section class="d-lg-block p-3" id="id-nanoGallery3" data-aos="fade-down-right" data-aos-duration="1000" data-aos-delay="700">
+        <div class="text-center p-5">
           <h3 display="display-6 text-center">Our Gallery</h3>
         </div>
-          <div id="nanoGallery3">
-            <a href="img/Rectangle 337.png" data-ngthumb="img/Rectangle 337.png"></a>
-            <a href="img/Rectangle 338.png" data-ngthumb="img/Rectangle 338.png"></a>
-            <a href="img/Rectangle 340.png" data-ngthumb="img/Rectangle 340.png"></a>
-            <a href="img/Rectangle 341.png" data-ngthumb="img/Rectangle 341.png"></a>
-            <a href="img/Rectangle 344.png" data-ngthumb="img/Rectangle 344.png"></a>
-            <a href="img/Rectangle 346.png" data-ngthumb="img/Rectangle 346.png"></a>
-            <a href="img/Rectangle 347.png" data-ngthumb="img/Rectangle 347.png"></a>
+        <div class="d-flex-row justify-content-center d-sm-none d-md-none d-lg-block" id="gallery-link">
+          <ul class="d-flex justify-content-center">
+            <li class="px-5"><a href="#" class="gallery-link">All</a></li>
+            <li class="px-5"><a href="#" class="gallery-link">Art</a></li>
+            <li class="px-5"><a href="#" class="gallery-link">Bridal</a></li>
+            <li class="px-5"><a href="#" class="gallery-link">Event</a></li>
+            <li class="px-5"><a href="#" class="gallery-link">Fashion</a></li>
+            <li class="px-5"><a href="#" class="gallery-link">On Screen</a></li>
+          </ul>
+        </div>
+          <div class="p-5" id="nanoGallery3">
+            <a href="img/Rectangle 337.png" data-ngthumb="img/Rectangle 337.png" class="p-3"></a>
+            <a href="img/Rectangle 338.png" data-ngthumb="img/Rectangle 338.png" class="p-3"></a>
+            <a href="img/Rectangle 339.png" data-ngthumb="img/Rectangle 339.png" class="p-3"></a>
+            <a href="img/Rectangle 340.png" data-ngthumb="img/Rectangle 340.png" class="p-3"></a>
+            <a href="img/Rectangle 341.png" data-ngthumb="img/Rectangle 341.png" class="p-3"></a>
+            <a href="img/Rectangle 342.png" data-ngthumb="img/Rectangle 342.png" class="p-3"></a>
+            <a href="img/Rectangle 343.png" data-ngthumb="img/Rectangle 343.png" class="p-3"></a>
+            <a href="img/Rectangle 344.png" data-ngthumb="img/Rectangle 344.png" class="p-3"></a>
+            <a href="img/Rectangle 345.png" data-ngthumb="img/Rectangle 345.png" class="p-3"></a>
+            <a href="img/Rectangle 346.png" data-ngthumb="img/Rectangle 346.png" class="p-3"></a>
+            <a href="img/Rectangle 347.png" data-ngthumb="img/Rectangle 347.png" class="p-3"></a>
+            <a href="img/Rectangle 348.png" data-ngthumb="img/Rectangle 348.png" class="p-3"></a>
         </div>
     </section>
     
@@ -258,41 +277,9 @@
         </div>
 
         <div class="container-fluid p-0 m-0">
-            <form class="p-3">
-              <div class="d-flex justify-content-around">
-                <div class="form-row text-center">
-                    <div class="form-group col-lg-2">
-                      <label for="inputCity">City</label>
-                      <input type="text" class="form-control" id="inputCity">
-                    </div>
-                    <div class="form-group col-lg-2">
-                      <label for="inputState">State</label>
-                      <select id="inputState" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                    <div class="form-group col-lg-2">
-                      <label for="inputZip">Zip</label>
-                      <input type="text" class="form-control" id="inputZip">
-                    </div>
-                    <div class="form-group col-lg-2">
-                      <label for="inputZip">Zip</label>
-                      <input type="text" class="form-control" id="inputZip">
-                    </div>
-                    <div class="form-group col-lg-2 mt-2">
-                      <label for=""></label>
-                      <button class="btn-sm btn-danger mt-4">Book Now</button>
-                  </div>
-                  <div class="form-group col-lg-2">
+           
 
-                  </div>
 
-                </div>
-              </div>
-      
-            </form>
-         
         </div>
     </section>
 
@@ -367,6 +354,12 @@
     <!-- Optional JavaScript -->
     <script src="js/app.js"></script>
 
+    <script>
+        $('document').ready(function () {
+            $('#nanoGallery3').nanoGallery();
+        });
+    </script>
+
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     
@@ -376,6 +369,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="jquery.nanogallery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nanogallery.min.js"></script>
   </body>
 </html>
