@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+:root {
+    --animate-duration: 3s;
+    --animate-delay: 0.5s;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+header{
+    background: url('/img/BG\ IMG.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh !important;
+}
+nav{
+    font-size: 24px !important;
+}
+.navbar-brand{
+    font-size: 24px !important;
+}
+.navbar-brand:hover{
+    transform: scale(3.001);
+    -webkit-transform: scale(1.1);
+    transition-duration: 0.5s;
+    text-shadow: 2px 4px 10px rgb(10, 5, 5);
+    
+}
+.nav-link:hover{
+    transform: scale(3.001);
+    -webkit-transform: scale(1.1);
+    transition-duration: 0.5s;
+    color: black !important;
+}
+ul li{
+    text-decoration: none !important;
+    list-style-type: none;
+}
+.card{
+    background: #F4F4F4 !important;
+    border-radius: 8px;
+    
+}
+.card-footer{
+    border-top: none !important;
+    background: #F4F4F4 !important;
+}
+.btn-danger{
+    background: rgba(217, 32, 60, 0.89) !important;
+    box-shadow: 5px 5px 25px rgba(255, 29, 114, 0.2) !important;
+    border-radius: 10px !important;
+}
+/* 
+.form-control{
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+} */
+#footer-ul a:hover{
+    text-decoration: none !important;
+    list-style-type: none;
+    transform: scale(2.001) !important;
+    -webkit-transform: scale(1.1);
+    transition-duration: 0.5s;
+    text-shadow: 2px 4px 10px rgb(68, 49, 49);
+}
+footer li{
+    text-decoration: none !important;
+    list-style-type: none !important;
+}
